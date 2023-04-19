@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llStopAddress"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            android:gravity="center">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:background="#B2B2B2"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                app:srcCompat="@drawable/user_pin" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="16dp"
+                android:background="#B2B2B2"/>
+        </LinearLayout>
+
+        <com.goride.provider.components.MyFontTextView
+            android:id="@+id/tvMapStopAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="@dimen/dimen_address_padding"
+            android:paddingBottom="@dimen/dimen_address_padding"
+            android:layout_marginEnd="@dimen/activity_horizontal_padding"
+            android:paddingStart="@dimen/dimen_bill_line"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@string/text_pickup_address"
+            android:textColor="@color/color_app_text"
+            android:textSize="@dimen/size_general_small" />
+
+    </LinearLayout>
+
+
+    <requestFocus />
+
+</LinearLayout>

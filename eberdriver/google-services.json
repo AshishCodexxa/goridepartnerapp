@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "799358631458",
+    "project_id": "goride-partner",
+    "storage_bucket": "goride-partner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:799358631458:android:485bcdec3155209c0b947b",
+        "android_client_info": {
+          "package_name": "com.goride.provider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "799358631458-2as1vp8rk3ri5ml0rkafv0e05uoiikht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.goride.provider",
+            "certificate_hash": "299ea57d8c70e88c64e3bf89a20ce17c11723c7f"
+          }
+        },
+        {
+          "client_id": "799358631458-t4isntdbfjes9kfu1rmags7k1nvj2v7u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE06EIW72BJvcvC4Qqt2rzYwaJRYUP3bI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "799358631458-t4isntdbfjes9kfu1rmags7k1nvj2v7u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
