@@ -5,10 +5,11 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:scaleType="centerCrop"
         android:src="@drawable/eber_sp"
+        android:layout_gravity="center"
         android:alpha="0.3"/>
 
     <LinearLayout
