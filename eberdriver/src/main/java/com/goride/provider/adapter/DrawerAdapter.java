@@ -1,6 +1,9 @@
 package com.goride.provider.adapter;
 
 import android.content.res.TypedArray;
+import android.graphics.Color;
+import android.graphics.ColorFilter;
+import android.os.Build;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -59,6 +62,9 @@ public class DrawerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         ViewHolder viewHolder = (ViewHolder) holder;
         viewHolder.tvDrawerItemTitle.setText(drawerItemTitle.getString(position));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+
+        }
         viewHolder.ivDrawerItemIcon.setImageResource(drawerItemIcon.getResourceId(position, 0));
         viewHolder.ivDot.setVisibility(notifyDot.contains(viewHolder.tvDrawerItemTitle.getText().toString()) ? View.VISIBLE : View.GONE);
 

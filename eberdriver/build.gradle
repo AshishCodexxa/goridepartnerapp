@@ -5,7 +5,7 @@ android {
     compileSdkVersion 33
     buildToolsVersion '30.0.3'
     defaultConfig {
-        applicationId "com.quickzet.driver"
+        applicationId "com.goride.provider"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 7
@@ -31,17 +31,17 @@ android {
     productFlavors {
         production {
             flavorDimensions "default"
-            buildConfigField "String", "BASE_URL", '"https://quickzet.com/"'
+            buildConfigField "String", "BASE_URL", '"https://goridecabs.com/"'
         }
 
         staging {
             flavorDimensions "default"
-            buildConfigField "String", "BASE_URL", '"https://quickzet.com/"'
+            buildConfigField "String", "BASE_URL", '"https://goridecabs.com/"'
         }
 
         developer {
             flavorDimensions "default"
-            buildConfigField "String", "BASE_URL", '"https://quickzet.com/"'
+            buildConfigField "String", "BASE_URL", '"https://goridecabs.com/"'
         }
 
         local {
