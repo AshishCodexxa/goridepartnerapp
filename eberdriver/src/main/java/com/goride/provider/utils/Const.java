@@ -18,7 +18,7 @@ public class Const {
      * Google url
      */
     public static final String GOOGLE_API_URL = BuildConfig.FLAVOR.equalsIgnoreCase("local")
-            ? "https://maps.googleapis.com/maps/" : BASE_URL + "gmapsapi/maps/";
+            ? "https://maps.googleapis.com/maps/" : /*BASE_URL*/"https://quickzet.com/" + "gmapsapi/maps/";
 
     /**
      * location displacement in meter
