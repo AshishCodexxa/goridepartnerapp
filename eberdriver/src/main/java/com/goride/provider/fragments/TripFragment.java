@@ -590,7 +590,9 @@ public class TripFragment extends BaseFragments implements OnMapReadyCallback, M
                                             isOtpVerified = true;
                                             ImageView  imageView = drawerActivity.findViewById(R.id.ivToolbarIcon);
                                             imageView.setVisibility(View.VISIBLE);
+                                            Log.e("providerStatus","OnClick Provider status" + setProviderStatus);
                                             updateProviderStatus(setProviderStatus);
+
 
                                         } else {
                                             Toast.makeText(drawerActivity, "Otp Verification Failed", Toast.LENGTH_SHORT).show();
@@ -1090,6 +1092,8 @@ public class TripFragment extends BaseFragments implements OnMapReadyCallback, M
      * this method call WebService to set provider status
      */
     private void updateProviderStatus(int providerStatus) {
+
+        Log.e("providerStatus","update  Provider status" + providerStatus);
 
         if (providerStatus == Const.ProviderStatus.PROVIDER_STATUS_TRIP_STARTED) {
             setTotalTime(0);
