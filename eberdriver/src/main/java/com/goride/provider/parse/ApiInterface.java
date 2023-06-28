@@ -112,13 +112,13 @@ public interface ApiInterface {
     @POST("get_wallet_history")
     Call<WalletHistoryResponse> getWalletHistory(@Body RequestBody requestBody);
 
-    @GET("api/distancematrix/json")
+    @GET("https://maps.googleapis.com/maps/api/distancematrix/json")
     Call<ResponseBody> getGoogleDistanceMatrix(@QueryMap Map<String, String> stringMap);
 
-    @GET("api/geocode/json")
+    @GET("https://maps.googleapis.com/maps/api/geocode/json")
     Call<ResponseBody> getGoogleGeocode(@QueryMap Map<String, String> stringMap);
 
-    @GET("api/directions/json")
+    @GET("https://maps.googleapis.com/maps/api/directions/json")
     Call<ResponseBody> getGoogleDirection(@QueryMap Map<String, String> stringMap);
 
     @Headers("Content-Type:application/json;charset=UTF-8")

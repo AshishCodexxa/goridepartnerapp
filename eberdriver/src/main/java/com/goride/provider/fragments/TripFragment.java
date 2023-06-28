@@ -473,6 +473,7 @@ public class TripFragment extends BaseFragments implements OnMapReadyCallback, M
         destAddress = trip.getDestinationAddress();
         tvMapPickupAddress.setText(trip.getSourceAddress());
         pickUpLatLng = new LatLng(trip.getSourceLocation().get(0), trip.getSourceLocation().get(1));
+
         if (trip.getDestinationLocation() != null && !trip.getDestinationLocation().isEmpty() && trip.getDestinationLocation().get(0) != null && trip.getDestinationLocation().get(1) != null) {
             destLatLng = new LatLng(trip.getDestinationLocation().get(0), trip.getDestinationLocation().get(1));
         }
@@ -831,7 +832,7 @@ public class TripFragment extends BaseFragments implements OnMapReadyCallback, M
 
                 if (pickUpLatLng != null) {
                     if (pickUpMarker == null) {
-                        bitmapDescriptor = BitmapDescriptorFactory.fromBitmap(Utils.drawableToBitmap(AppCompatResources.getDrawable(drawerActivity, R.drawable.user_pin)));
+                        bitmapDescriptor = BitmapDescriptorFactory.fromBitmap(Utils.drawableToBitmap(AppCompatResources.getDrawable(drawerActivity, R.drawable.ic_source)));
                         pickUpMarker = googleMap.addMarker(new MarkerOptions().position(pickUpLatLng).title(drawerActivity.getResources().getString(R.string.text_pick_up_loc)).icon(bitmapDescriptor));
                     } else {
                         pickUpMarker.setPosition(pickUpLatLng);
@@ -839,7 +840,7 @@ public class TripFragment extends BaseFragments implements OnMapReadyCallback, M
                 }
                 if (destLatLng != null) {
                     if (destinationMarker == null) {
-                        bitmapDescriptor = BitmapDescriptorFactory.fromBitmap(Utils.drawableToBitmap(AppCompatResources.getDrawable(drawerActivity, R.drawable.destination_pin)));
+                        bitmapDescriptor = BitmapDescriptorFactory.fromBitmap(Utils.drawableToBitmap(AppCompatResources.getDrawable(drawerActivity, R.drawable.ic_destination)));
                         destinationMarker = googleMap.addMarker(new MarkerOptions().position(destLatLng).title(drawerActivity.getResources().getString(R.string.text_drop_location)).icon(bitmapDescriptor));
                     } else {
 
